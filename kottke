@@ -1,0 +1,452 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7 ]> <html class="ie6" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie7" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"> <!--<![endif]-->
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="kottke.org" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kottke.org" />
+<meta property="og:image" content="https://kottke.org/images/2016/ios/180x180.png" />
+<meta property="og:site_name" content="kottke.org" />
+<meta property="og:description" content="home of fine hypertext products" />
+<meta property="fb:admins" content="549560637" />
+<meta property="fb:app_id" content="279322152122365" /><title>kottke.org - home of fine hypertext products</title>
+
+<link href="/images/2016/ios/32x32.png" rel="icon" type="image/png" sizes="32x32" />
+<link href="/images/2016/ios/180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="/images/2016/ios/167x167.png" rel="apple-touch-icon" sizes="167x167" />
+<link href="/images/2016/ios/152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="/images/2016/ios/120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="/images/2016/ios/80x80.png" rel="apple-touch-icon" sizes="80x80" />
+<link href="/images/2016/ios/76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="/images/2016/ios/40x40.png" rel="apple-touch-icon" sizes="40x40" />
+<link href="/images/2016/ios/192x192.png" rel="icon" sizes="192x192" />
+<link href="/images/2016/ios/128x128.png" rel="icon" sizes="128x128" />
+
+<script src="/templates/2016/js/jquery-1.11.3.min.js"></script>
+<script src="/templates/2016/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="/templates/2016/js/bigfoot.js"></script>
+<script type="text/javascript" src="/templates/2016/js/jquery.widowFix-1.3.min.js"></script>
+<script src="/templates/2016/js/jquery.timeago.js" type="text/javascript"></script>
+
+<script src="/templates/2016/js/updater.js" type="text/javascript"></script>
+<script type="text/javascript">intvId = setInterval ("getUpdates('/frontpage/updates/index.php?id=42829','updates')",300000);</script>
+
+<script src="/templates/2016/js/jquery.unveil.js"></script>
+
+<script>
+$(document).ready(function() {
+	$(".widescreen iframe").unveil(250);
+	$(".post iframe").unveil(250);
+	$(".widescreen img").unveil(150);
+	$(".post img").unveil(150);
+});
+</script>
+<script type="text/javascript">
+  (function(c) {
+    var script = document.createElement("script");
+    script.src = "https://js.memberful.com/embed.js";
+    script.onload = function() { Memberful.setup(c) };
+    document.head.appendChild(script);
+  })({
+    site: ["https://kottke.memberful.com"]
+  });
+</script>
+
+<script type="text/javascript">
+	$.bigfoot(
+        {
+			numberResetSelector: ".post",
+			buttonMarkup: "<div class='bigfoot-footnote__container' aria-hidden=\"true\"> <button class=\"bigfoot-footnote__button\" id=\"{{SUP:data-footnote-backlink-ref}}\" data-footnote-number=\"{{FOOTNOTENUM}}\" data-footnote-identifier=\"{{FOOTNOTEID}}\" aria-hidden=\"true\" rel=\"footnote\" data-bigfoot-footnote=\"{{FOOTNOTECONTENT}}\"> <i class=\"fa fa-plus-circle\"></i> </button></div>"
+        }
+    );
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".post p a").attr("target","_blank");
+	$('.post p a[href*="//kottke.org"]').removeAttr("target");
+	$(".post p sup a").removeAttr("target");
+	$(".post .footnote a:last-of-type").removeAttr("target");
+	$(".quicklinks-post a").attr("target","_blank");
+	$(".quicklinks-front-post a").attr("target","_blank");
+	$(".bling-bling a").attr("target","_blank");
+	$(".bling-job a").attr("target","_blank");
+
+	$("time.timeago").timeago();
+	
+	$('#easel h2').widowFix();
+	
+	$(".post p strong:contains('Update:')").each(function() {
+	    $( this ).addClass("post-update").html("Update" + ((typeof $( this ).attr('title') !== typeof undefined && $( this ).attr('title') !== false) ? "<span class='update-timestamp'> ·  " + $( this ).attr("title") + "</span>" : ""));
+	  });
+    });
+</script>
+
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/790324/737040/css/fonts.css" />
+<link rel="stylesheet" href="/templates/2016/css/font-awesome-4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/templates/2016/css/main.css?v=26" type="text/css" />
+<link rel="stylesheet" href="/templates/2016/css/bigfoot-default.css" type="text/css" />
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.kottke.org/main" />
+<link rel="alternate" type="application/json" href="http://feeds.kottke.org/json" />
+
+</head>
+<body  id="kottke-org">
+
+<div id="header"><a href="/">kottke.org<span id="head-br"><br /></span><span id="head-heart"> &nbsp;&hearts;&nbsp; </span><span id="head-sub">25 yrs of fine hypertext products</span></a></div>
+
+<div id="top-nav-wide"><a href="/">home</a><a href="/about">about</a><a href="/everfresh">archive</a><a href="/newsletter">newsletter</a><a href="/members">membership!</a><div id="follow"><a href="https://botsin.space/@kottke" rel="me" aria-label="Follow kottke.org on Mastodon" target="_blank"><img src="/images/2016/mastodon.svg" height="17" style="margin-bottom:-2px;" border="0" /></a><a href="https://facebook.com/kottke.org" aria-label="Follow kottke.org on Facebook" id="follow-facebook" target="_blank"><i class="fa fa-facebook-square"></i></a><a href="http://feeds.kottke.org/main" aria-label="Read kottke.org via RSS" id="follow-feed" target="_blank"><i class="fa fa-rss"></i></a></div></div>
+
+<div id="top-nav-medium"><a href="/about">about</a><a href="/everfresh">archive</a><a href="/members">membership!</a><div id="follow"><a href="https://botsin.space/@kottke" rel="me" aria-label="Follow kottke.org on Mastodon" target="_blank"><img src="/images/2016/mastodon.svg" height="15" style="margin-bottom:-2px;" border="0" /></a><a href="https://facebook.com/kottke.org" aria-label="Follow kottke.org on Facebook" id="follow-facebook" target="_blank"><i class="fa fa-facebook-square"></i></a><a href="http://feeds.kottke.org/main" aria-label="Read kottke.org via RSS" id="follow-feed" target="_blank"><i class="fa fa-rss"></i></a></div></div>
+
+<div id="top-nav-narrow"><a href="/about">about</a><a href="/everfresh">archive</a><a href="/members">members!</a></div>
+
+<div id="easel">
+
+<p id="updates"></p>
+
+<div class="post">
+
+<div class="quicklinks-front-post">
+<a href="https://www.nytimes.com/interactive/2023/upshot/flashback.html">Flashback</a>, a weekly history quiz from the NY Times; you're given historical events to put into the correct order on a timeline.</div>
+<div class="quicklinks-front-meta">
+
+<time class="timeago" datetime="2023-08-07T22:21:20Z">Aug  7 @ 06:21 PM</time>
+</div>
+
+</div>
+
+<div class="post-sidebar">
+
+<div class="bling-title"><a href="https://carbonads.net/" target="_blank">ads via Carbon</a></div>
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DTK7I&placement=kottkeorg"; id="_carbonads_js"></script>
+
+</div><div class="post-spacer-hr"></div>
+
+<h2><a href="https://kottke.org/23/08/climate-change-is-death-by-a-thousand-cuts">"Climate Change Is Death by a Thousand Cuts"</a></h2>
+
+<div class="meta">
+<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>  Aug 07, 2023</span></div>
+</div>
+
+
+
+<div class="post">
+
+<p>Andrew Dessler, a climate scientist at Texas A&amp;M, says that the most likely way people will be impacted by the climate crisis won't be with some big disaster but <a href="https://www.theclimatebrink.com/p/climate-change-is-death-by-a-thousand">with a bunch of small changes that add up to something unmanageable</a>.</p>
+
+<blockquote>
+<p>Let me give you an example of a tiny impact that I just heard about. My wife told me about a new group of members at her gym: active 70-ish-year-olds who used to go on walks around their neighborhood. Due to the unbearable heat in Texas, though, they joined a gym and now walk indoors on treadmills. This story embodies several aspects of climate impacts that everyone should understand.</p>
+
+<p>First, this is an example of non-linear climate impacts. Although temperatures have been rising gradually over the last century, it was only recently that they crossed a critical threshold that made outdoor walks literally unbearable for these people.</p>
+
+<p>Second, this is what adaptation to climate change looks like. Contrary to how it is typically portrayed by climate dismissives, adaptation is not free. These people are paying $50 per month for the gym membership that is an inferior replacement for something they used to get for free: an environment cool enough to walk in.</p>
+
+<p>So these people are worse off financially and not getting as good of an experience as they used to. And they're the lucky ones — they have the opportunity and resources to do this.</p>
+
+<p>There's also the non-monetary costs of adaptation. When it's too hot to go outside during the day, you are a prisoner of air conditioning instead of going outside and getting fresh air and exercise. We've lost something valuable but difficult to quantify.</p>
+</blockquote>
+
+<p>Some great points here. Reading it made me think of the gun problem here in the US. The focus is often on the immediate damage that guns do (mass shootings, suicides) but there are hundreds of other ways, large and small, in which guns make Americans' lives worse. For many people, the number of guns in this country and the hard-line views held by those who own them add up to a general vibe of feeling unsafe and under threat. For me, it definitely seems like "we've lost something valuable but difficult to quantify" by allowing so many guns to exist in our communities.</p>
+
+
+<div class="entry-tags-title">More about...</div>
+<ul class="entry-tags">
+<li><a href="/tag/Andrew%20Dessler">Andrew Dessler</a></li><li><a href="/tag/climate%20crisis">climate crisis</a></li><li><a href="/tag/guns">guns</a></li><li><a href="/tag/USA">USA</a></li>
+</ul>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<div class="post">
+
+<div class="quicklinks-front-post">
+<a href="https://twistedsifter.com/2020/06/how-wavy-crinkle-crankle-walls-use-less-bricks-than-straight-walls/">"Crinkle crankle walls"</a> (ribbon shaped walls) actually use fewer bricks than a straight wall because they are stable at a thickness of one brick while a straight wall needs a thickness of two bricks.</div>
+<div class="quicklinks-front-meta">
+
+<time class="timeago" datetime="2023-08-07T19:34:19Z">Aug  7 @ 03:34 PM</time>
+</div>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<h2><a href="https://kottke.org/23/08/the-expressive-illustrations-of-felicia-chiao">The Expressive Illustrations of Felicia Chiao</a></h2>
+
+<div class="meta">
+<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>  Aug 07, 2023</span></div>
+</div>
+
+
+
+<div class="post">
+
+<p><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1000" height="1250" border="0" alt="illustration of two yellow figures sitting in red flowers" data-src="/plus/misc/images/felicia-chiao-23-01.jpg"></p>
+
+<p><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1000" height="1250" border="0" alt="illustration of several figures in patterned dress" data-src="/plus/misc/images/felicia-chiao-23-02.jpg"></p>
+
+<p><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1000" height="1241" border="0" alt="illustration of a large figure sitting in a bed of flowers" data-src="/plus/misc/images/felicia-chiao-23-03.jpg"></p>
+
+<p>I really enjoyed taking a spin around <a href="https://www.instagram.com/feliciachiao/">Felicia Chiao's Instagram</a> (<a href="https://kottke.org/20/07/iso-isolation">previously</a>) — it's chock full of vibrant, expressive and dreamy work. Oh and take a look at her <a href="https://www.instagram.com/p/Cvh3bnPA0Zw/">sketchbook</a> <a href="https://www.instagram.com/p/Cqdce9ljD_n/">tours</a> — and you can <a href="https://paragon-books.com/products/sketchbook-6">buy a reproduction of her 6th sketchbook here</a> (<a href="https://www.amazon.com/exec/obidos/ASIN/1952251044/ref=nosim/0sil8">here too</a>).</p>
+
+
+<div class="entry-tags-title">More about...</div>
+<ul class="entry-tags">
+<li><a href="/tag/art">art</a></li><li><a href="/tag/Felicia%20Chiao">Felicia Chiao</a></li><li><a href="/tag/illustration">illustration</a></li>
+</ul>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<div class="post">
+
+<div class="quicklinks-front-post">
+<a href="https://www.threads.net/@michael.chabon/post/CvVrj-TLIK7/">Author Michael Chabon digitally recreated the science fiction &amp; fantasy section of his childhood bookstore</a> — "a look back at the visuals that embodied and accompanied my early aspirations as a writer". <a href="https://msha.ke/handmadeplaylists/#the-shelves-of-time">Bigger here</a>.</div>
+<div class="quicklinks-front-meta">
+
+via <a href="https://boingboing.net/2023/07/31/author-michael-chabon-recreates-the-science-fiction-section-from-the-bookstore-of-his-youth.html">boingboing.net</a> · <time class="timeago" datetime="2023-08-07T18:34:25Z">Aug  7 @ 02:34 PM</time>
+</div>
+	<p class="smaller" style="margin-top:3rem;margin-bottom:0;"><strong>Note:</strong> You can find more Quick Links <a href="/quick-links">in the archive</a>.</p>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<div class="post">
+
+<div class="quicklinks-front-post">
+<a href="https://www.nytimes.com/2023/08/04/health/postpartum-depression-pill-fda.html?unlocked_article_code=YKcPHwXLe5QxBdES7kjSFZxzEgznGx3JDIQQR8Q_MAbSChJSfX8hNXXmQV2LmyzvQZRnx1tzVSOYkMdDorXT977OnO6vkeh5fZiWmI9e9G-jdCIaUv6emK9HD_Zw-CrXTX0yRrI8pf0GiZKze92GsSQOzWwdmUUm-3PYEQaYqIEHGSgvINZdQr3-KYUAI_eHqK8GmZ0DgCe7x_SUjZHbQ6bFAdVPZmT_LFMNeLwnwWe1MsE0nwOaCYOyCXgDge2plkAT74ty_TixH5Q23RbVWeU4vaSdv6bXgOCdx54jxlaOJ4MxDVvlcXPoDLrG5caSTdjc75P0-SVOP4vFq1Zn_fo4rEr1&amp;smid=url-share">For the First Time, There's a Pill for Postpartum Depression</a>. "Because the pill works faster than other antidepressants and is taken for only two weeks, it may encourage more treatment of the debilitating condition."</div>
+<div class="quicklinks-front-meta">
+
+<time class="timeago" datetime="2023-08-07T18:02:23Z">Aug  7 @ 02:02 PM</time>
+</div>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<h2><a href="https://kottke.org/23/08/car-bloat-huge-cars-are-terrible-for-society">Car Bloat: "Huge Cars Are Terrible for Society"</a></h2>
+
+<div class="meta">
+<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>  Aug 07, 2023</span></div>
+</div>
+
+
+
+<div class="post">
+
+<p><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1000" height="442" border="0" alt="Compare Carsized" data-src="/plus/misc/images/compare-carsized.jpg"></p>
+
+<p>David Zipper, who researches and writes about mobility and transportation, recently <a href="https://mastodon.social/@davidzipper/110843841107933007">did a big thread on Mastodon</a> (and <a href="https://bsky.app/profile/davidzipper.bsky.social/post/3k4a4elm25e2p">Bluesky</a>) about car bloat: the way in which cars and trucks have gotten much bigger and heavier in the US over the past few decades and how it's bad for society. The whole thread is worth a read...here are a couple of Zipper's points:</p>
+
+<blockquote><p>Tall vehicles have bigger blind spots and are more likely to strike a person's torso or head. Heavier vehicles exert more force crashing into a person, bicycle, or smaller car. They also have longer braking distances.</p></blockquote>
+
+<blockquote><p>Heavier cars exert more pressure on tires, eroding them faster. Tire particles are absorbed into water, where they damage ecosystems. They also float through the air, harming human health when ingested.</p></blockquote>
+
+<p>For further reading, Zipper links to a number of pieces he's written in recent months: <a href="https://www.fastcompany.com/90854942/the-blatant-greenwashing-of-suvs">The Blatant Greenwashing of SUVs</a>, <a href="https://www.theatlantic.com/technology/archive/2023/07/electric-vehicles-tires-wearing-out-particulates/674750/">EVs Are Sending Toxic Tire Particles Into the Water, Soil, and Air</a>, <a href="https://slate.com/business/2023/06/electric-vehicles-auto-haulers-weight-capacity-roads.html">Carry That Weight</a>, and <a href="https://slate.com/business/2022/11/suv-size-truck-bloat-pedestrian-deaths.html">The Car Safety Feature That Kills the Other Guy</a>. Zipper's solution to these problems is government action: for example, <a href="https://slate.com/business/2023/01/electric-cars-hummer-ev-tax-fees-weight-joe-biden.html">taxing vehicles by weight</a>, testing vehicles for pedestrian and cyclist safety, or requiring drivers have commercial driver's licenses for larger vehicles.</p>
+
+<p class="smaller">The image above is from Carsized and <a href="https://www.carsized.com/en/cars/compare/volkswagen-jetta-2005-sedan-vs-ram-1500-2018-4-door-pickup-crew-cab-5/">compares a 2018 Dodge Ram to a 2005 VW Jetta</a>.</p>
+
+
+<div class="entry-tags-title">More about...</div>
+<ul class="entry-tags">
+<li><a href="/tag/cars">cars</a></li><li><a href="/tag/David%20Zipper">David Zipper</a></li><li><a href="/tag/USA">USA</a></li>
+</ul>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<div class="post">
+
+<div class="quicklinks-front-post">
+<a href="https://www.amazon.com/exec/obidos/ASIN/0306926008/ref=nosim/0sil8">Data Baby: My Life in a Psychological Experiment</a>, a forthcoming book by my pal Susannah Breslin. "What if your parents turn you into a human lab rat when you're a child? Will that change the story of your life? Will that change who you are?"</div>
+<div class="quicklinks-front-meta">
+
+<time class="timeago" datetime="2023-08-07T16:31:23Z">Aug  7 @ 12:31 PM</time>
+</div>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<h2><a href="https://kottke.org/23/08/heres-what-world-class-scrabble-looks-like">Here's What World-Class Scrabble Looks Like</a></h2>
+
+<div class="meta">
+<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>  Aug 07, 2023</span></div>
+</div>
+
+<p class="widescreen embedded"><iframe width="100%" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-src="https://www.youtube.com/embed/47ynBJFz0MI"></iframe></p>
+
+
+<div class="post">
+
+
+
+<p>Scrabble is one of those games where pro/expert gameplay differs so much from amateur/novice gameplay that it might as well be a totally different game. In this entertaining recap of the finals of the 2023 Scrabble World Championships, former US champ Will Anderson explains how finalists David Eldar and Harshan Lamabadusuriya think and strategize throughout the best-of-seven series.</p>
+
+<p>Gameplay aside, the thing that stood out for me is how many of the words played I'd just never heard of before. Like, at least 60% of them. Like I said, it's just a completely different game at the expert level, with a shit-ton of memorization required. I don't play Scrabble for this reason — because if you don't have a bunch of two-letter words and Q,Z, &amp; X words memorized and you're playing against someone who does, it's not fun. But it is fun to see two heavyweights of the game go at it on equal terms. (via <a href="https://www.peterme.com/">peterme</a>)</p>
+
+
+<div class="entry-tags-title">More about...</div>
+<ul class="entry-tags">
+<li><a href="/tag/games">games</a></li><li><a href="/tag/language">language</a></li><li><a href="/tag/Scrabble">Scrabble</a></li><li><a href="/tag/video">video</a></li>
+</ul>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<div class="post">
+
+<div class="quicklinks-front-post">
+<a href="https://www.thedailybeast.com/obsessed/paul-reubens-never-got-to-make-the-comeback-he-deserved">Paul Reubens Never Got the Critical Reappraisal He Deserved.</a> "For Reubens in particular, the homage paid to him comes with the sad sting of too little, too late."</div>
+<div class="quicklinks-front-meta">
+
+via <a href="https://waxy.org/">waxy.org</a> · <time class="timeago" datetime="2023-08-07T14:13:05Z">Aug  7 @ 10:13 AM</time>
+</div>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<div class="post">
+
+<div class="quicklinks-front-post">
+<a href="https://culture.ghost.io/why-havent-internet-creators-become-superstars/">Why haven't internet creators become superstars?</a> "Bella Poarch can get a half-billion views in one year on TikTok but the caliber of companies reaching out to her for celebrity sponsorship deals is HyperX High Quality Gaming Gear, not LVMH." </div>
+<div class="quicklinks-front-meta">
+
+via <a href="https://www.robinsloan.com/">robinsloan.com</a> · <time class="timeago" datetime="2023-08-04T15:47:51Z">Aug  4 @ 11:47 AM</time>
+</div>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<h2><a href="https://kottke.org/23/08/an-animated-figure-battles-mathematics">An Animated Figure Battles Mathematics</a></h2>
+
+<div class="meta">
+<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>  Aug 04, 2023</span></div>
+</div>
+
+<p class="widescreen embedded"><iframe width="100%" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-src="https://www.youtube.com/embed/B1J6Ou4q8vE"></iframe></p>
+
+
+<div class="post">
+
+
+
+<p>It is astounding to me the number of YouTube channels that I have never heard of with subscriber bases larger than that of many countries. (This goes double and triple for Instagram and TikTok.) Alan Becker has over 23 million subscribers and makes videos pitting animated characters against various other entities. His latest video is Animation vs. Math and it is super nerdy and engaging. You might have to be a bit of a math nerd to enjoy this fully, but even if you only get the gist of what's going on (like I did for at least half of the video), it's still pretty entertaining. You can check the comments for an explanation of the math or <a href="https://www.youtube.com/watch?v=igDeXHS5kUU">this illustrated explainer</a>.</p>
+
+
+<div class="entry-tags-title">More about...</div>
+<ul class="entry-tags">
+<li><a href="/tag/animation">animation</a></li><li><a href="/tag/mathematics">mathematics</a></li><li><a href="/tag/video">video</a></li>
+</ul>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<div class="post">
+
+<div class="quicklinks-front-post">New book by Roxane Gay is out this fall — <a href="https://www.amazon.com/exec/obidos/ASIN/B0BWYV66RH/ref=nosim/0sil8">Opinions: A Decade of Arguments, Criticism, and Minding Other People's Business</a>.</div>
+<div class="quicklinks-front-meta">
+
+<time class="timeago" datetime="2023-08-04T14:02:43Z">Aug  4 @ 10:02 AM</time>
+</div>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<div class="post">
+
+<div class="quicklinks-front-post">This is lovely: Sheila E. runs across someone playing her song The Glamorous Life on a portable speaker at the mall and <a href="https://www.instagram.com/reel/CvaLth7trIF/">something surprising happens that I do not want to ruin...</a>
+</div>
+<div class="quicklinks-front-meta">
+
+<time class="timeago" datetime="2023-08-04T13:25:58Z">Aug  4 @ 09:25 AM</time>
+</div>
+	<p class="smaller" style="margin-top:3rem;margin-bottom:0;"><strong>Note:</strong> You can find more Quick Links <a href="/quick-links">in the archive</a>.</p>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+<h2><a href="https://kottke.org/23/08/five-crises-republicans-made-up-to-distract-harm-americans">Five Crises Republicans Made Up to Distract & Harm Americans</a></h2>
+
+<div class="meta">
+<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>  Aug 03, 2023</span></div>
+</div>
+
+<p class="widescreen embedded"><iframe width="100%" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-src="https://www.youtube.com/embed/IZQF3oYt8hs"></iframe></p>
+
+
+<div class="post">
+
+
+
+<p>In <a href="https://www.theguardian.com/commentisfree/2023/jun/01/republicans-fake-crises-five-biggest">a June piece for The Guardian</a> and the video above from just a few days ago, Robert Reich outlines five crises — including wokeness, the trans panic, and critical race theory — that Republicans have manufactured in order to deflect from their true agenda. </p>
+
+<blockquote>
+<p>Virginia governor Glenn Youngkin's "day one" executive order banned the teaching of critical race theory. DeSantis and Greg Abbott, the Texas governor, have also banned it from schools.</p>
+
+<p>Here again, though, there's no evidence of a public threat. CRT simply teaches America's history of racism, which students need to understand to be informed citizens.</p>
+
+<p>Banning it is a scare tactic to appeal to a largely white, culturally conservative voter base.</p>
+</blockquote>
+
+<p>However, I would argue that Reich needed to go a bit further. While the crises are inventions, their consequences go beyond mere distraction and into the territory of active harm, particularly of queer and trans people, Black people, and people of color. That's why I modified the title from his original.</p>
+
+
+<div class="entry-tags-title">More about...</div>
+<ul class="entry-tags">
+<li><a href="/tag/LGBTQ">LGBTQ</a></li><li><a href="/tag/politics">politics</a></li><li><a href="/tag/racism">racism</a></li><li><a href="/tag/Robert%20Reich">Robert Reich</a></li><li><a href="/tag/USA">USA</a></li><li><a href="/tag/video">video</a></li>
+</ul>
+
+</div>
+
+<div class="post-spacer-hr"></div>
+
+
+<p class="page-nav"><a href="/?p=2">Older posts &nbsp;<i class="fa fa-arrow-right"></i></a></p><p class="page-nav-more">And much more <a href="/everfresh">in the archives</a>...</p>
+</div>
+
+<div class="spacer"></div>
+
+<div id="footer">
+
+<div id="bottom-nav-wide"><span id="loving-you">kottke.org, loving you since 1998</span><a href="/" title="home">home</a><a href="/about" title="about">about</a><a href="/everfresh" title="archive">archive</a><a href="/newsletter">newsletter</a><a href="/members">membership!</a><a href="/tag/burgers" title="hamburger menu" aria-hidden="true"><i class="fa fa-bars"></i></a></div>
+
+<div id="bottom-nav-medium"><a href="/" title="home">home</a><a href="/about" title="about">about</a><a href="/everfresh" title="archive">archive</a><a href="/members">membership!</a><a href="/tag/burgers" title="hamburger menu" aria-hidden="true"><i class="fa fa-bars"></i></a></div>
+
+<div id="bottom-nav-narrow"><a href="/" title="home">home</a><a href="/about" title="about">about</a><a href="/everfresh" title="archive">archive</a><a href="/tag/burgers" title="hamburger menu" aria-hidden="true"><i class="fa fa-bars"></i></a></div>
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-871179-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
